@@ -3,6 +3,10 @@ body {
   background-color: azure;
 }
 
+h1{
+  color: white;
+}
+
 .mySlides {
   display: none;
 }
@@ -23,7 +27,7 @@ img {
   align-items: center;
   justify-content: center;
   padding: 5%;
-  background-image: url("../Images/Background_for_header.jpg");
+  background-image: url("../Images/Capture.JPG");
   background-size: cover;
 }
 
@@ -46,7 +50,8 @@ img {
 
 .footer {
   display: flex;
-  justify-content: center:
+  justify-content: center;
+  border: 1px black solid;
 }
 
 .content-column-text {
