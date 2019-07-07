@@ -1,6 +1,6 @@
 body {
   font-family: Verdana, sans-serif;
-  background-color: azure;
+  background-color: black;
 }
 
 h1{
@@ -16,9 +16,8 @@ img {
   width: 100%;
 }
 
-.header-content {
-  width: 50%;
-
+.menu-bar{
+  height: 150px;
 }
 
 /* Header container */
@@ -29,6 +28,13 @@ img {
   padding: 5%;
   background-image: url("../Images/Capture.JPG");
   background-size: cover;
+}
+
+
+
+.header-content {
+  width: 50%;
+
 }
 
 .fb-embed {
