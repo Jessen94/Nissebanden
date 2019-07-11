@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/Jessen94/Nissebanden/issues"
   },
-  "homepage": "https://github.com/Jessen94/Nissebanden#readme",
+  "homepage": "https://github.com/Jessen94/Nissebanden",
   "dependencies": {
     "gh-pages": "^2.0.1"
   }
