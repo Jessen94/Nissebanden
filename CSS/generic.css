@@ -1,10 +1,27 @@
+:root{
+  /*Whitespace*/
+  --whitespace-small: 12px;
+  --whitespace-medium: 24px;
+  --whitespace-large: 48px;
+  --whitespace-xlarge: 128px;
+
+  /*Font size's*/
+  --fontsize-small: 12px;
+  --fontsize-medium: 24px; 
+  --fontsize-large: 48px;
+  --fontsize-xlarge: 96px;
+
+  /*Colours*/
+  --whitespace-color: #d9d0d0;
+  --Background-color: white;
+}
 body {
   font-family: Verdana, sans-serif;
-  background-color: white;
+  background-color: var(--Background-color);
 }
 
 h1{
-  color: white;
+  color: var(--Background-color);
 }
 
 .mySlides {
@@ -30,11 +47,9 @@ img {
   background-size: cover;
 }
 
-
-
 .header-content {
   width: 50%;
-
+  font-size: var(--fontsize-large);
 }
 
 .fb-embed {
@@ -85,11 +100,15 @@ img {
   width: 150%
 }
 
+.white-space-block{
+  height: var(--whitespace-xlarge);
+  background-color: var(--whitespace-color);
+}
+
 /* Slideshow container */
 .slideshow-container {
   position: relative;
   margin-right: 15%;
-
 }
 
 .active {
@@ -117,13 +136,12 @@ img {
   }
   /* Header container */
 .header-container {
-  
   align-items: center;
   justify-content: center;
   padding: 5%;
   background-image: url("../Images/Capture.JPG");
   background-size: cover;
-  font-size: 10px;
+  font-size: var(--fontsize-xlarge);
 }
 
 .fb-embed {
@@ -138,37 +156,39 @@ img {
   margin-right: 3%;
   border-left: 1px solid black;
   border-right: 1px solid black;
-  background-color: white;
+  background-color: var(--Background-color);
 }
 
 .content-column {
  display: block;
 }
-  .content-column-text {
-      margin-top: 10%;
-      width: 50%;
-      overflow: auto;
-      padding: 2%;
-    }
+
+.content-column-text {
+  margin-top: 10%;
+  width: 50%;
+  overflow: auto;
+  padding: 2%;
+  }
     
-    .content-column-images-right {
-      overflow: visible;
-      margin-top: 10%;
-      width: auto;
-      padding: 2%;
-    }
+.content-column-images-right {
+  overflow: visible;
+  margin-top: 10%;
+  width: auto;
+  padding: 2%;
+  }
     
-    .content-column-images-left {
-      overflow: visible;
-      margin-top: 10%;
-      width: auto;
-      padding: 2%;
-    }
-    .content-column-images-right>img {
-      width: 100%
-    }
+.content-column-images-left {
+  overflow: visible;
+  margin-top: 10%;
+  width: auto;
+  padding: 2%;
+  }
+  
+.content-column-images-right>img {
+  width: 100%
+  }
     
-    .content-column-images-left>img {
-      width: 100%
-    }
+.content-column-images-left>img {
+  width: 100%
+  }
 }
