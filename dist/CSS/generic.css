@@ -163,6 +163,58 @@ img {
 }
 
 
+@media only screen and (max-width: 540px) {
+
+  /* Header container */
+  .header-container {
+    height: 300px;
+  }
+  .header-content {
+    font-size: var(--fontsize-medium);
+  }
+
+  img {
+    width: 90%;
+  }
+
+  .fb-embed{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+ 
+  .white-space{
+    height: var(--whitespace-large);
+  }
+
+  
+  .content-column {
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .content-column-text {
+    width: 92%;
+    margin-top: 5%;
+    padding: 4%;
+    font-size: var(--fontsize-xsmall);
+    text-align: justify;
+    line-height: 1.5;
+  }
+  
+  .content-column-images-right {
+    width: 100%;
+    padding: 5%;
+  }
+  
+  .content-column-images-left {
+    width: 100%;
+    padding: 5%;
+    direction: ltr;
+  }
+
+}
+
 @media only screen and (max-width: 340px) {
 
   /* Header container */
