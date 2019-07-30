@@ -17,6 +17,7 @@
   --Background-color: white;
 }
 body {
+  width: 100%;
   font-family: Verdana, sans-serif;
   background-color: var(--Background-color);
 }
