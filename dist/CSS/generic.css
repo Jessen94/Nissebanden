@@ -189,7 +189,8 @@ img {
 
   
   .content-column {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin-left: 5%;
     margin-right: 5%;
   }
@@ -237,33 +238,6 @@ img {
  
   .white-space{
     height: var(--whitespace-large);
-  }
-
-  
-  .content-column {
-    display: block;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  
-  .content-column-text {
-    width: 92%;
-    margin-top: 5%;
-    padding: 4%;
-    font-size: var(--fontsize-xsmall);
-    text-align: justify;
-    line-height: 1.5;
-  }
-  
-  .content-column-images-right {
-    width: 100%;
-    padding: 5%;
-  }
-  
-  .content-column-images-left {
-    width: 100%;
-    padding: 5%;
-    direction: ltr;
   }
 
 }
