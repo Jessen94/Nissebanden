@@ -96,6 +96,7 @@ img {
   width: 50%;
   overflow: auto;
   padding: 8%;
+  line-height: 1.4;
 }
 
 .content-column-images-right {
