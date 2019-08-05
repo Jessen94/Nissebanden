@@ -69,9 +69,9 @@ img {
 }
 
 .fb-embed > iframe {
-  width: 320px; 
+  width: 500px; 
   height: 500px; 
-  border:none;
+  border: none;
   overflow: hidden;
 }
 
