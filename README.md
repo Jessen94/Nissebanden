@@ -1,2 +1,0 @@
-# Nissebanden
-Klan Nissebandens side
