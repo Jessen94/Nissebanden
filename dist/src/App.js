@@ -1,7 +1,10 @@
 import React from 'react'
 import './App.css'
 import { Box } from '@material-ui/core'
-import FacebookFrame from './components/FacebookFrame';
+import FacebookFrame from './components/FacebookFrame'
+import Footer from './components/Footer'
+import Img from './components/Img'
+
 
 function App() {
   return (
@@ -35,39 +38,24 @@ function App() {
             </span>
             </h2>
           </div>
-          <div className="content-column-images-right">
-            <img src="Images/Slovakiet_2019_bjerg.jpg" alt="Klanen på et bjerg i slovakiet" />
+          <Img alt="Klanen på et bjerg i slovakiet" left="true" />
+        </div>
+        <div className="content-column">
+          <div className="content-column-text">
+            <h2>
+              <span>
+                For mere info tjek vores facebook-fanside -
+                hvor der blandt andet kan findes en beskrivelse
+                af historien bag navnet, en track-artikel,
+                og billeder fra sidste års sommerlejr, som var en vandretur i Slovakiet.
+                </span>
+            </h2>
           </div>
-          </div>
- 
-
-          <div className="content-column">
-            <div className="content-column-images-left">
-              <img src="Images/Slovakiet_2019_Paintball.jpg" alt="Klanen spiller paintball"/>
-          </div>
-              <div className="content-column-text">
-                <h2>
-                  <span>
-                    For mere info tjek vores facebook-fanside -
-                    hvor der blandt andet kan findes en beskrivelse
-                    af historien bag navnet, en track-artikel,
-                    og billeder fra sidste års sommerlejr, som var en vandretur i Slovakiet.
-                  </span>
-                </h2>
-              </div>
-            </div>
-
-            <FacebookFrame />
-           
-            <footer className="footer">
-              <p className="footer-links">
-                <a href="https://www.Nissebanden.dk">Home</a>
-                <a href="https://www.facebook.com/pg/Nissebanden/about/">About</a>
-                <a href="https://www.facebook.com/Nissebanden/">Contact</a>
-              </p>
-              <p className="footer-company-name">Klan Nissebanden &copy; 1991</p>
-            </footer>
-          </div>
+          <Img alt="Klanen på et bjerg i slovakiet" left="true" />
+        </div>
+        <FacebookFrame />
+        <Footer />
+      </div>
     </Box>
   );
 }
