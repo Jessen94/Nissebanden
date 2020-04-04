@@ -2,43 +2,57 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import { Box } from '@material-ui/core';
+import CardMedia from '@material-ui/core/CardMedia';
+import CardContent from '@material-ui/core/CardContent';
 import ImgLeft from './Images/Slovakiet_2019_bjerg.jpg';
 import ImgRight from './Images/Slovakiet_2019_Paintball.jpg';
 
 
 const useStyles = makeStyles({
-  left: {
-    overflow: 'visible',
-    width: '50%',
-    padding: '2%',
-    direction: 'rtl',
+  root: {
+    display: 'flex',
   },
-  right: {
-    overflow: 'visible',
-    width: '50%',
-    padding: '2%',
+  cover: {
+    height: '300px',
+    width: '300px',
   },
 });
 
+const Images = ({ image, alt }) => {
+  const classes = useStyles();
+  return (
+    <Box className={classes.root}>
+      <CardContent className={classes.content}>
+        <CardMedia
+          className={classes.cover}
+          image={image}
+          title={alt}
+        />
+      </CardContent>
+    </Box>
+  );
+};
+
+Images.propTypes = {
+  image: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+};
+
 // eslint-disable-next-line react/prop-types
 const Img = ({ alt, left }) => {
-  const classes = useStyles();
   if (left) {
     return (
-      <Box className={classes.left}>
-        <img src={ImgLeft} alt={alt} />
-      </Box>
+      <Images image={ImgLeft} alt={alt} />
     );
   }
   return (
-    <Box className={classes.right}>
-      <img src={ImgRight} alt={alt} />
-    </Box>
+    <Images image={ImgRight} alt={alt} />
   );
 };
 
 Img.propTypes = {
   alt: PropTypes.string.isRequired,
+  left: PropTypes.bool.isRequired,
 };
 
 export default Img;
