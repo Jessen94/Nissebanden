@@ -26,6 +26,7 @@ const useStyles = makeStyles({
     height: '800px',
     backgroundSize: 'cover',
     boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+    padding: '0px',
   },
   headerContent: {
     width: '100%',
@@ -33,13 +34,14 @@ const useStyles = makeStyles({
     padding: '0%',
   },
   CardContent: {
-    padding: '0%',
+    padding: '0px',
   },
   contentColumnText: {
-    width: '50%',
+    width: '100%',
     overflow: 'auto',
     padding: '8%',
     lineHeight: '1.4',
+    textAlign: 'left',
   },
   text: {
     width: '30%',
@@ -86,7 +88,7 @@ function App() {
           </div>
           <Img alt="Klanen på et bjerg i slovakiet" left />
         </Box>
-        <Box className={classes.contentColumn}>
+        <Box className={classes.contentColumn} style={{ direction: 'rtl' }}>
           <div className={classes.contentColumnText}>
             <Typography variant="body1" gutterBottom>
               For mere info tjek vores facebook-fanside -

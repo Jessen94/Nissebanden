@@ -2,8 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import { Box } from '@material-ui/core';
-import CardMedia from '@material-ui/core/CardMedia';
-import CardContent from '@material-ui/core/CardContent';
 import ImgLeft from './Images/Slovakiet_2019_bjerg.jpg';
 import ImgRight from './Images/Slovakiet_2019_Paintball.jpg';
 
@@ -13,8 +11,10 @@ const useStyles = makeStyles({
     display: 'flex',
   },
   cover: {
-    height: '300px',
-    width: '300px',
+    transform: 'scale(0.9)',
+    maxWidth: '150%',
+    height: 'auto',
+    margin: '4%',
   },
 });
 
@@ -22,13 +22,7 @@ const Images = ({ image, alt }) => {
   const classes = useStyles();
   return (
     <Box className={classes.root}>
-      <CardContent className={classes.content}>
-        <CardMedia
-          className={classes.cover}
-          image={image}
-          title={alt}
-        />
-      </CardContent>
+      <img src={image} alt={alt} className={classes.cover} />
     </Box>
   );
 };
