@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Nissebanden/precache-manifest.363af0856be619e169e4501a6b4c5b73.js"
+  "/Nissebanden/precache-manifest.d257c84848c5048946e2469a1230bffb.js"
 );
 
 self.addEventListener('message', (event) => {
