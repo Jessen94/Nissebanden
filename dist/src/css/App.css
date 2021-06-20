@@ -48,7 +48,7 @@ img {
     justify-content: right;
     padding: 5%;
     height: 800px;
-    background-image: url("./components/Images/Banner.JPG");
+    background-image: url("../components/Images/Banner.JPG");
     background-size: cover;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
